@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Hurson Ekow Adom</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #3498db;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #2980b9;
+      border-radius: 5px;
+    }
+
+    /* Main Header */
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #3498db;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    /* About Us Section */
+    .about-us {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 40px 20px;
+      margin-top: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-info {
+      width: 48%;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-info h2 {
+      font-size: 2.5em;
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+
+    .about-info p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* Hover effect for About Info */
+    .about-info:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-us {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .about-info {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="services.html">Services</a> |
+    <a href="portfolio.html">Portfolio</a> |
+    <a href="testimonials.html">Testimonials</a> |
+    <a href="aboutus.html">About Us</a> |
+    <a href="contactus.html">Contact</a>
+  </nav>
+
+  <!-- Main Header -->
+  <header>
+    <h1>About Us</h1>
+    <p>Discover who we are and why we're passionate about building innovative digital solutions.</p>
+  </header>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="about-info">
+      <h2>Our Mission</h2>
+      <p>At Hurson Ekow Adom Digital, our mission is to empower businesses with custom web and mobile applications that drive growth and success. We are committed to delivering quality, innovation, and user-centric solutions that make a difference.</p>
+    </div>
+    <div class="about-info">
+      <h2>Our Team</h2>
+      <p>We are a group of creative, skilled professionals dedicated to bringing your vision to life. Our team of designers, developers, and strategists work collaboratively to create exceptional digital experiences for our clients.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Hurson Ekow Adom. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
